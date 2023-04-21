@@ -1,0 +1,40 @@
+apiVersion: v1
+entries:
+  photoprism:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 220629-jammy
+    created: "2023-04-21T16:30:53.096901439Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    description: PhotoPrism® is a server-based application for browsing, organizing
+      and sharing your personal photo collection
+    digest: 25398729e9fbeb58cc0b2746dab11e7ae461df7402e5ccca7191ef201f780386
+    home: https://github.com/c0depool/c0depool-charts/tree/master/charts/stable/photoprism
+    icon: https://demo.photoprism.org/static/img/logo-avatar.svg
+    keywords:
+    - photos
+    - photoprism
+    - pictures
+    - sharing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: jeff@billimek.com
+      name: billimek
+    name: photoprism
+    sources:
+    - https://github.com/photoprism/photoprism
+    - https://hub.docker.com/r/photoprism/photoprism
+    urls:
+    - https://github.com/c0depool/c0depool-charts/releases/download/photoprism-7.1.2/photoprism-7.1.2.tgz
+    version: 7.1.2
+generated: "2023-04-21T16:30:53.096914539Z"
